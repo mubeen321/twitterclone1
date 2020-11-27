@@ -2,6 +2,10 @@ import { Avatar } from '@material-ui/core'
 import React from 'react'
 import './Post.css'
 import  VerifiedUserIcon  from "@material-ui/icons/VerifiedUser";
+import ChatBubbleOutlineIcon from "@material-ui/icons/ChatBubbleOutline"
+import RepeatIcon from '@material-ui/icons/Repeat'
+import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder'
+import PublishIcon from '@material-ui/icons/Publish'
 
 function Post({ displayname,username,verified,text,image,avatar}){
     return(
@@ -17,16 +21,25 @@ function Post({ displayname,username,verified,text,image,avatar}){
                     <div className="post-header-text"> 
                     <h3>Mubeen Chughtai{" "} 
                     {/* <VerifiedUserIcon /> */}
-                    <span>    
-                        <VerifiedUserIcon />
-                        </span>@chughtai5</h3>
+                    <span className="header-special">    
+                        <VerifiedUserIcon className="post-badge" />
+
+                        @chughtai5
+                        </span></h3>
                     </div>
                     <div className="post-header-description">
                         <p>Today I,m using Twitter Clone</p>
                     </div>
                     
                 </div>
-                 {/* <img src="https://i.pinimg.com/originals/36/f9/6f/36f96fdaeb786fd601eb4e34b6b38ff7.jpg" alt=""></img>  */}
+                 <img src="https://media.giphy.com/media/26hkhPJ5hmdD87HYA/giphy.gif" alt=""/>
+
+                 <div className="post-footer">
+                     <ChatBubbleOutlineIcon fontSize="small"/>
+                     <RepeatIcon fontSize="small"/>
+                     <FavoriteBorderIcon fontSize="small"/>
+                     <PublishIcon fontSize="small"/>
+                     </div> 
          </div>
 
 

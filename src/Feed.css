@@ -9,11 +9,12 @@
 .feed-header{
     position: sticky;
     top: 0;
-    /* background-color: var(--twitter-background); */
+    background-color:white !important;
     z-index: 100;
     padding:15px 20px;
     border: 1px solid var(--twitter-background);
 }
+
 .feed::-webkit-scrollbar{
     display: none
 }
